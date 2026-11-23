@@ -1,0 +1,20 @@
+{
+  "name": "masakyuk-project",
+  "version": "1.0.0",
+  "description": "MasakYuk - Platform Resep Masakan & AI Asisten Kuliner",
+  "main": "api/index.js",
+  "type": "module",
+  "scripts": {
+    "install:all": "npm install && npm --prefix frontend install",
+    "dev": "npm --prefix frontend run dev",
+    "dev:api": "node api/index.js",
+    "build": "npm --prefix frontend run build",
+    "start": "node api/index.js"
+  },
+  "dependencies": {
+    "@google/genai": "^0.2.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2"
+  }
+}
